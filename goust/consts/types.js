@@ -1,0 +1,1 @@
+export const ABOUT_PAGE = "ABOUT_PAGE"

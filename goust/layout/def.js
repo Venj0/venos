@@ -1,12 +1,15 @@
-import {Navbar} from "../components/nabigation";
+import {Navbar} from "../components/navbar";
+import {GlobalProvider} from "../providers/globalProvider";
 
-export const Main = ({children})=>{
-    return (
-        <div>
-					<Navbar/>
-            <h2>pages</h2>
-            <hr/>
-            {children}
-        </div>
-    )
+export const Main = ({children}) => {
+	return (
+		<>
+			<GlobalProvider>
+				<Navbar/>
+				<h2>pages</h2>
+				<hr/>
+				{children}
+			</GlobalProvider>
+		</>
+	)
 }
